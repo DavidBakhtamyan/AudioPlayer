@@ -1,0 +1,18 @@
+.MusicUploadForm{
+    width: 700px;
+    height: 40px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.MusicUploadForm button{
+    padding: 3px;
+}
+@media (max-width: 715px) {
+    .MusicUploadForm{
+        width: 100vw;
+    }
+  }

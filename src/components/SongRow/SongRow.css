@@ -1,0 +1,92 @@
+.SongRow{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    color: rgb(102, 100, 100);
+}
+.active{
+    background-color: red !important;
+}
+.playIcon{
+    cursor: pointer;
+}
+.pauseIcon{
+    cursor: pointer;
+}
+.SongRowPlay{
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.SongRowName{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.PlayingAnim{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.PlayingAnim span{
+    width: 3px;
+    background-color: rgb(80, 79, 79);
+}
+.PlayingAnim1{
+    animation: PlayingAnimation 2s infinite alternate;
+}
+.PlayingAnim2{
+    animation: PlayingAnimation 0.5s infinite alternate;
+}
+.PlayingAnim3{
+    animation: PlayingAnimation 1s infinite alternate;
+}
+.SongRowArtist{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.SongRowTrack{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.SongRowAction{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    width: 100px;
+    height: 100%;
+}
+.favorite{
+    color: red !important;
+}
+.fa-heart{
+    cursor: pointer;
+}
+
+@keyframes PlayingAnimation {
+    0%{
+        height: 0px;
+    }
+    50%{
+        height: 13px;
+    }
+    100%{
+        height: 0px;
+    }
+}
+@media (max-width: 715px) {
+    .SongRow{
+        width: 100vw;
+    }
+  }

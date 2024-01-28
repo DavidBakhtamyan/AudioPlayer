@@ -1,0 +1,60 @@
+.SongList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    padding: 0 5px;
+    font-size: 13px;
+    color: #4f4f4f;
+}
+.SongListContainer{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #d7d7d7;
+    width: 700px;
+    height: 40px;
+}
+.SongListPlay{
+    width: 40px;
+}
+.SongListName{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border-left: 1px solid white;
+    width: 250px;
+    height: 100%;
+}
+.SongListArtist{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    padding-left: 5px;
+    height: 100%;
+    width: 250px;
+}
+.SongListTrack{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    padding-left: 5px;
+    height: 100%;
+    width: 60px;
+}
+.SongListActions{
+    display: flex;
+    align-items: center;
+    border-left: 1px solid white;
+    height: 100%;
+    padding-left: 5px;
+    width: 100px;
+}
+@media (max-width: 715px) {
+    .SongListContainer{
+        display: none;
+    }
+    .SongList{
+        width: 100vw;
+    }
+  }

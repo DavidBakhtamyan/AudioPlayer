@@ -1,0 +1,71 @@
+.Sort{
+    position: relative;
+}
+.SortBtn{
+    background-color: #e9e8e8;
+    height: 25px;
+    width: 110px;
+    border-radius: 3px;
+    border: 1px solid black;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:5px;
+}
+.sortDropdownContainer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.sortDropdownActive{
+    display: flex;
+    flex-direction: column;
+    width: 109px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 13px;
+    border-bottom: none;
+    position: absolute;
+    margin-top: 7px;
+    z-index: 1;
+}
+.sortDropdownActive span{
+    border-bottom: 1px solid black;
+    padding: 3px;
+}
+.sortDropdownActive span:hover{
+    cursor: pointer;
+    background-color: #ccc;
+}
+.dropdownTriangle {
+    z-index: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;  
+    border-right: 10px solid transparent; 
+    border-bottom: 20px solid #6a6969;        
+}
+.sortSpan{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 512px) {
+    .AddAllButtonBtn {
+        width: 20px;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .AddAllButtonDropdown{
+        width: 10px;
+        display: none;
+    }
+    .AddAllText{
+        display: none;
+    }
+  }

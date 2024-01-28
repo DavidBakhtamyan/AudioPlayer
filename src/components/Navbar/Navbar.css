@@ -1,0 +1,28 @@
+.Navbar{
+    width: 700px;
+    height: 45px;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    justify-content: space-between;
+}
+.Btns{
+    display: flex;
+    gap: 10px; 
+}
+.filtres{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 715px) {
+    .Navbar {
+        position: absolute;
+        top: 0;
+        border-radius: 0;
+        width: 100vw;
+    }
+  }

@@ -1,0 +1,81 @@
+.LoadingContainer{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #0000008c;
+    font-size: 19px;
+}
+.Loading{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 500px;
+    height: 200px;
+}
+.LoadingText{
+    max-height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.dots{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    font-size: 25px;
+}
+.dot1{
+    animation: dotAnimation 0.8s infinite ease-in-out;
+}
+.dot2{
+    animation: dotAnimation 0.8s 0.25s infinite ease-in-out;
+}
+.dot3{
+    animation: dotAnimation 0.8s 0.5s infinite ease-in-out;
+}
+.progressBar{
+    width: 350px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid black;
+    position: relative;
+}
+.progressBar::before{
+    content: "";
+    position: absolute;
+    height: inherit;
+    border-radius: 5px;
+    animation: progressAnimation 5s forwards;
+    background-color: rgb(62, 62, 218);
+}
+@keyframes dotAnimation {
+    0% {
+        margin-bottom: 0px;
+    }
+    50%{
+        margin-bottom: 5px;
+    }
+    100%{
+        margin-bottom: 0px
+    }
+    
+}
+@keyframes progressAnimation {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}

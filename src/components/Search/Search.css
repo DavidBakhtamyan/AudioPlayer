@@ -1,0 +1,23 @@
+.Search{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    position: absolute;
+    left: 5px;
+    color: #6a6a6a;
+}
+.searchInput{
+    padding-left: 25px;
+    border: 1px solid #9c9b9b;
+    border-radius: 10px;
+    background-color: #e9e8e8;
+    height: 24px;
+    width: 150px;
+}
+@media (max-width: 715px) {
+    .searchInput{
+        width: 100px;
+    }
+  }
